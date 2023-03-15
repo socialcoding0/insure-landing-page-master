@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  background-color: white;
+  font-size: 16px;
+  min-width: 300px; }
+  body main .mobile-hamburger,
+  body main .mobile-nav-header {
+    display: none; }
+  body main .mobile-hamburger,
+  body main .mobile-close {
+    cursor: pointer; }
+  body main li {
+    list-style: none; }
+    body main li a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      cursor: pointer; }
+  body main button {
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase; }
+  body main h1,
+  body main h2,
+  body main h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 300; }
+  body main hr {
+    min-width: 180px; }
+  body main .container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    min-width: 900px; }
+  body main .bg {
+    width: 100%; }
+    body main .bg .top {
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0rem; }
+      body main .bg .top nav {
+        display: flex;
+        gap: 2rem;
+        align-items: center; }
+        body main .bg .top nav ul {
+          display: flex;
+          gap: 1.3rem; }
+          body main .bg .top nav ul li a {
+            color: #837d87; }
+            body main .bg .top nav ul li a:hover {
+              color: #2d2640; }
+        body main .bg .top nav .top-btn {
+          border: 2px solid #2b272f; }
+          body main .bg .top nav .top-btn:hover {
+            background-color: #2d2640;
+            color: #fafafa; }
+  body main .bg-middle {
+    position: relative;
+    overflow: hidden;
+    background: #fbfbfb;
+    background: linear-gradient(0deg, white 30%, #2d2640 30%);
+    margin-bottom: 3rem; }
+    body main .bg-middle .bg-pattern {
+      position: absolute; }
+    body main .bg-middle .right {
+      right: 0px;
+      top: -80px; }
+    body main .bg-middle .left {
+      width: 12%;
+      left: 0;
+      bottom: 0px; }
+    body main .bg-middle .middle {
+      gap: 1.5rem;
+      padding-top: 6rem;
+      padding-bottom: 1rem;
+      justify-content: space-between;
+      align-items: flex-start; }
+      body main .bg-middle .middle .middle-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        width: 50%;
+        height: 100%;
+        min-height: 100vh; }
+        body main .bg-middle .middle .middle-info .line {
+          width: 20%; }
+        body main .bg-middle .middle .middle-info .line-middle-bottom {
+          margin-top: auto; }
+        body main .bg-middle .middle .middle-info h1 {
+          color: #fafafa;
+          font-size: 4rem;
+          line-height: 4rem;
+          margin-top: 2rem;
+          width: 90%; }
+        body main .bg-middle .middle .middle-info p {
+          color: #95a9c6;
+          line-height: 1.5rem; }
+        body main .bg-middle .middle .middle-info .middle-btn {
+          color: #fafafa;
+          border: 2px solid #fafafa; }
+          body main .bg-middle .middle .middle-info .middle-btn:hover {
+            background-color: #fafafa;
+            color: #2b272f; }
+      body main .bg-middle .middle img {
+        width: 47%; }
+  body main .different {
+    flex-direction: column;
+    gap: 5rem; }
+    body main .different h2 {
+      font-size: 3.5rem; }
+    body main .different .different-contents {
+      display: flex;
+      justify-content: space-between; }
+      body main .different .different-contents .different-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 29.5%;
+        gap: 1rem; }
+        body main .different .different-contents .different-content h3 {
+          margin-top: 0.5rem;
+          font-size: 1.5rem; }
+        body main .different .different-contents .different-content p {
+          color: #837d87;
+          font-size: 0.9rem;
+          line-height: 1.5rem; }
+  body main .find-out {
+    background: #2d2640;
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: contain;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+    margin: 8rem auto; }
+    body main .find-out h2 {
+      color: #fafafa;
+      min-width: 418px;
+      font-size: 3rem;
+      width: 47%;
+      line-height: 3rem; }
+    body main .find-out .find-out-btn {
+      color: #fafafa;
+      border: 2px solid #fafafa; }
+      body main .find-out .find-out-btn:hover {
+        background-color: #fafafa;
+        color: #2b272f; }
+  body main .bg-footer {
+    background: #fafafa;
+    background-image: url("../images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left; }
+    body main .bg-footer .footer {
+      flex-direction: column;
+      gap: 3rem;
+      padding: 2rem 0rem 4rem 0rem; }
+      body main .bg-footer .footer .footer-header {
+        display: flex;
+        padding: 2rem 0rem;
+        border-bottom: 1.6px solid rgba(131, 125, 135, 0.3);
+        align-items: center;
+        justify-content: space-between; }
+        body main .bg-footer .footer .footer-header .social-btns {
+          display: flex;
+          gap: 1rem; }
+          body main .bg-footer .footer .footer-header .social-btns i {
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #837d87; }
+            body main .bg-footer .footer .footer-header .social-btns i:hover {
+              color: #2b272f; }
+      body main .bg-footer .footer .footer-navs {
+        display: flex;
+        gap: 10rem; }
+        body main .bg-footer .footer .footer-navs .footer-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem; }
+          body main .bg-footer .footer .footer-navs .footer-nav span {
+            text-transform: uppercase;
+            color: #837d87;
+            font-size: 0.8rem;
+            font-weight: 700; }
+          body main .bg-footer .footer .footer-navs .footer-nav ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem; }
+            body main .bg-footer .footer .footer-navs .footer-nav ul li a {
+              color: #2b272f;
+              font-size: 0.8rem; }
+              body main .bg-footer .footer .footer-navs .footer-nav ul li a:hover {
+                text-decoration: underline; }
+
+@media screen and (max-width: 992px) {
+  body main .container {
+    width: 95%;
+    min-width: 300px; }
+  body main .bg-middle {
+    background: #fbfbfb;
+    background: linear-gradient(0deg, white 10%, #2d2640 10%); }
+    body main .bg-middle .middle {
+      flex-direction: column;
+      padding-bottom: 0rem;
+      align-items: center; }
+      body main .bg-middle .middle .middle-info {
+        width: 100%;
+        order: 2;
+        align-items: center;
+        text-align: center;
+        min-height: 0rem;
+        justify-content: flex-end; }
+        body main .bg-middle .middle .middle-info .line-middle-top {
+          display: none; }
+        body main .bg-middle .middle .middle-info .line-middle-bottom {
+          margin-top: 10rem; }
+      body main .bg-middle .middle img {
+        width: 100%;
+        max-width: 540px;
+        max-height: 640px;
+        object-fit: cover;
+        order: 1; }
+  body main .different {
+    align-items: center; }
+    body main .different .different-contents {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem; }
+      body main .different .different-contents .different-content {
+        align-items: center;
+        text-align: center;
+        width: 100%; }
+  body main .find-out {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    background-size: cover; }
+    body main .find-out h2 {
+      width: 100%;
+      min-width: 300px; }
+  body main .bg-footer .footer .footer-header {
+    flex-direction: column;
+    gap: 3rem; }
+  body main .bg-footer .footer .footer-navs {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem; } }
+
+@media screen and (max-width: 540px) {
+  body {
+    position: relative; }
+    body main .bg-top .top nav {
+      position: fixed;
+      width: 50%;
+      background: #2b272f;
+      background-image: url("../images/bg-pattern-mobile-nav.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      right: 0px;
+      top: 0;
+      height: 100%;
+      z-index: 11;
+      align-items: center;
+      flex-direction: column;
+      min-width: 300px;
+      display: none; }
+      body main .bg-top .top nav ul {
+        order: 2;
+        flex-direction: column;
+        width: 100%;
+        text-align: center; }
+        body main .bg-top .top nav ul li a {
+          color: #fafafa; }
+          body main .bg-top .top nav ul li a:hover {
+            color: #fafafa; }
+      body main .bg-top .top nav .top-btn {
+        order: 3;
+        width: 85%;
+        background-color: transparent;
+        color: #fafafa;
+        border: 2px solid #fafafa;
+        max-width: 240px; }
+        body main .bg-top .top nav .top-btn:hover {
+          background-color: #fafafa;
+          color: #2d2640; }
+      body main .bg-top .top nav .mobile-nav-header {
+        display: flex;
+        align-items: center;
+        order: 1;
+        justify-content: space-between;
+        background-color: #fafafa;
+        width: 100%;
+        padding: 1.2rem 0.8rem; }
+    body main .bg-top .top .active-nav {
+      display: flex; }
+    body main .bg-top .top .mobile-hamburger {
+      display: block; }
+    body main .bg-middle .left,
+    body main .bg-middle .right {
+      display: none; }
+    body main .bg-middle .middle {
+      width: 100%;
+      padding-top: 0; }
+      body main .bg-middle .middle img {
+        z-index: 1; }
+    body main h1,
+    body main h2 {
+      font-size: 2.5rem !important; } }
